@@ -9,7 +9,7 @@
     "url": ""
   },
   "engines": {
-    "node": "~0.6.10 || 0.8 || 0.9"
+    "node": "*"
   },
   "scripts": {
     "start": "brunch watch --server",
@@ -21,7 +21,7 @@
 
     "css-brunch": "> 1.5 < 1.6",
 
-    "less": "*",
+    "less-brunch": "> 1.5 < 1.6",
 
     "handlebars-brunch": "> 1.5 < 1.6",
 
