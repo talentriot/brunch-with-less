@@ -20,7 +20,8 @@
     "auto-reload-brunch": "1.3.2",
 
     "css-brunch": "> 1.5 < 1.6",
-    "stylus-brunch": "> 1.5 < 1.6",
+
+    "less": "*",
 
     "handlebars-brunch": "> 1.5 < 1.6",
 
@@ -28,8 +29,8 @@
     "clean-css-brunch": "> 1.5 < 1.6"
   },
   "devDependencies": {
-    "chai": "1.2.0",
-    "sinon": "1.4.2",
-    "sinon-chai": "2.1.2"
+    "chai": "*",
+    "sinon": "*",
+    "sinon-chai": "*"
   }
 }
