@@ -46,7 +46,7 @@ To set up and get started on using a specific testing interface, take a look at 
 
 ## Dependency Versions
 
-Might not be entirely up to date, `Handlebars` and `Stylus` depend on their respective `brunch` plugins
+Might not be entirely up to date, `Handlebars` and `LESS` depend on their respective `brunch` plugins
 
 * [Backbone 1.0.0](http://backbonejs.org/)
 * [Lo-Dash v1.0.1](http://lodash.com)
