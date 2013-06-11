@@ -22,5 +22,4 @@ module.exports = View.extend({
   beforeRender: function() {
     this.iterateOverList(LinkView, 'ul');
   }
-
 });

@@ -1,5 +1,5 @@
 describe('Home Page', function() {
-  var HomeLayout = require('views/home-layout');
+  var HomeLayout = require('views/main-layout');
   var homeLayout = new HomeLayout();
   var view, headerEl, layoutEl;
 
@@ -10,7 +10,7 @@ describe('Home Page', function() {
     headerEl = layoutEl.find('header');
   });
   describe('Layout', function() {
-    it('should have a jquery wrapped $el',function() {
+    it('should have a jquery wrapped $el', function() {
       expect(homeLayout).to.have.property('$el');
     });
     it('layout should be rendered', function() {

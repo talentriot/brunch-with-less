@@ -14,7 +14,7 @@ exports.config =
       order:
         before: [
           'vendor/scripts/console-helper.js',
-          'vendor/scripts/jquery-2.0.2.js',
+          'vendor/scripts/jquery-1.10.1.js',
           'vendor/scripts/lodash.underscore-1.2.1.js',
           'vendor/scripts/backbone-1.0.0.js',
           'vendor/scripts/backbone.layoutmanager-0.8.8.js'
@@ -35,8 +35,7 @@ exports.config =
   modules:
     wrapper: 'commonjs'
     definition: 'commonjs'
-    addSourceURLs: true
-
+    addSourceURLs: no
   plugins:
     less:
       dumpLineNumbers: 'comments'

@@ -8,10 +8,12 @@ module.exports = {
   expect: chai.expect,
   should: chai.should,
   // $: require('jquery'),
-  err: function (fn, msg) {
+  err: function(fn, msg) {
     try {
       fn();
-      throw new chai.AssertionError({ message: 'Expected an error' });
+      throw new chai.AssertionError({
+        message: 'Expected an error'
+      });
     } catch (err) {
       chai.expect(err.message).to.equal(msg);
     }
@@ -19,7 +21,7 @@ module.exports = {
 
   init: function() {
     require('test/models/link-test');
-    require('test/router/main-test');
+    require('test/routers/main-test');
     require('test/views/home-layout-test');
     require('test/views/view-test');
   }
