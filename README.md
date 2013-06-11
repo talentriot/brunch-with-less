@@ -65,8 +65,9 @@ Handlebars was chosen due to its popularity and the way it restricts what you ca
 
 `LM` provides a logical structure for assembling layouts with Backbone Views. Designed to be adaptive and configurable for painless integration. Includes automatic cleanup as well as ability to define your own to make sure all your events are taken care of and no zombies are left hungering for brains.
 
-##License
-Brunch Marcos is distributed under the MIT license. All 3rd party libraries and components are distributed under their respective license terms.
+## License
+
+Brunch with Less is distributed under the MIT license. All 3rd party libraries and components are distributed under their respective license terms.
 
 ```
 Copyright (C) 2013 Talent Riot
