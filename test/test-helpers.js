@@ -8,10 +8,12 @@ module.exports = {
   expect: chai.expect,
   should: chai.should,
   // $: require('jquery'),
-  err: function (fn, msg) {
+  err: function(fn, msg) {
     try {
       fn();
-      throw new chai.AssertionError({ message: 'Expected an error' });
+      throw new chai.AssertionError({
+        message: 'Expected an error'
+      });
     } catch (err) {
       chai.expect(err.message).to.equal(msg);
     }
