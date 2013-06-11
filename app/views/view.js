@@ -2,7 +2,7 @@ require('lib/view-helpers');
 
 // Layout manager config to use our templates correctly
 Backbone.Layout.configure({
-  fetch: function (path) {
+  fetch: function(path) {
     return path;
   },
   render: function(template, context) {
@@ -23,8 +23,8 @@ var View = Backbone.Layout.extend({
     if (_.isString(viewObj)) {
       selector = viewObj;
       viewObj = View;
-    // otherwise if its an array then its really a list
-    // and we still don't have a view
+      // otherwise if its an array then its really a list
+      // and we still don't have a view
     } else if (_.isArray(viewObj)) {
       list = viewObj;
       viewObj = View;
@@ -32,7 +32,9 @@ var View = Backbone.Layout.extend({
 
     // Iterate over the passed list and create a view for each item.
     _.each(list, function(model) {
-      var childView = new viewObj({model: model});
+      var childView = new viewObj({
+        model: model
+      });
       if (_.isString(selector)) {
         this.setView(selector, childView, true);
       } else {
@@ -44,4 +46,6 @@ var View = Backbone.Layout.extend({
 
 // we specificially export a View so we can set up type specific views i.e
 // list view, region view, etc
-module.exports = {View: View};
+module.exports = {
+  View: View
+};
