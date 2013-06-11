@@ -25,7 +25,7 @@ exports.config =
         'test/styles/test.css': /^test/
       order:
         before: [
-          'vendor/styles/grid.less'
+          'vendor/styles/clearless/all.less'
           'app/views/styles/index.less'
         ]
         # after: ['vendor/styles/helpers.css']

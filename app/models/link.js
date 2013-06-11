@@ -24,7 +24,7 @@ Link.Collection = Collection.extend({
       },
       {
         name: 'Fork me on Github',
-        url: '//github.com/smazurov/brunch-marcos',
+        url: '//github.com/talentriot/brunch-with-less',
         external: true
       },
       {
@@ -42,8 +42,8 @@ Link.Collection = Collection.extend({
         url: '/'
       },
       {
-        name: 'Brunch-Marcos Issues',
-        url: '//github.com/smazurov/brunch-marcos/issues',
+        name: 'Brunch-With-Less Issues',
+        url: '//github.com/talentriot/brunch-with-less/issues',
         external: true
       },
       {
@@ -62,8 +62,8 @@ Link.Collection = Collection.extend({
         external: true
       },
       {
-        name: 'Stylus',
-        url: 'http://learnboost.github.com/stylus/',
+        name: 'LESS',
+        url: 'http://lesscss.org/',
         external: true
       },
       {
