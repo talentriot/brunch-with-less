@@ -25,18 +25,18 @@ exports.config =
         'test/styles/test.css': /^test/
       order:
         before: [
-          'vendor/styles/grid.styl'
-          'app/views/styles/index.styl'
+          'vendor/styles/grid.less'
+          'app/views/styles/index.less'
         ]
         # after: ['vendor/styles/helpers.css']
     templates:
       joinTo: 'scripts/app.js'
-
-  stylus: # https://github.com/brunch/stylus-brunch#spriting
-    spriting: no,
-    iconPath: 'app/assets/images'
   minify: no
   modules:
     wrapper: 'commonjs'
     definition: 'commonjs'
     addSourceURLs: true
+
+  plugins:
+    less:
+      dumpLineNumbers: 'comments'
