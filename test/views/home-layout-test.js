@@ -1,5 +1,5 @@
 describe('Home Page', function() {
-  var HomeLayout = require('views/home-layout');
+  var HomeLayout = require('views/main-layout');
   var homeLayout = new HomeLayout();
   var view, headerEl, layoutEl;
 

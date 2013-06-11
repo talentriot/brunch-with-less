@@ -1,5 +1,5 @@
 describe('Main Router', function() {
-  var MainRouter = require('router/main');
+  var MainRouter = require('routers/main');
   var router = new MainRouter();
   it('should route to home correctly', function() {
     "/".should.route.to(new MainRouter(), "index");

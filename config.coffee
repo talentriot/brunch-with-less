@@ -35,8 +35,7 @@ exports.config =
   modules:
     wrapper: 'commonjs'
     definition: 'commonjs'
-    addSourceURLs: true
-
+    addSourceURLs: no
   plugins:
     less:
       dumpLineNumbers: 'comments'

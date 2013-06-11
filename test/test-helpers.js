@@ -19,7 +19,7 @@ module.exports = {
 
   init: function() {
     require('test/models/link-test');
-    require('test/router/main-test');
+    require('test/routers/main-test');
     require('test/views/home-layout-test');
     require('test/views/view-test');
   }
