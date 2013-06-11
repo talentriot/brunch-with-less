@@ -1,4 +1,4 @@
-require('lib/view_helpers');
+require('lib/view-helpers');
 
 // Layout manager config to use our templates correctly
 Backbone.Layout.configure({

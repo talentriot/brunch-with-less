@@ -11,7 +11,7 @@ app.start = _.extend({
   initialize: function() {
     // Define your master router on the application namespace and trigger all
     // navigation from this instance.
-    var Router = require('router/main');
+    var Router = require('routers/main');
 
     this.router = new Router();
 
