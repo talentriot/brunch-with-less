@@ -1,10 +1,13 @@
 var getMainRegion = _.once(function() {
-    var MainLayout = require('views/home-layout');
-    var layout = new MainLayout({el: $('div#app')});
-    // $('body').empty().append(layout.el);
-    layout.render();
-    return layout;
+  var MainLayout = require('views/main-layout');
+  var layout = new MainLayout({
+    el: $('div#app')
   });
+  // $('body').empty().append(layout.el);
+  layout.render();
+  return layout;
+});
+
 function renderRegion(region) {
   var layout = getMainRegion();
   layout.trigger('route', region);
