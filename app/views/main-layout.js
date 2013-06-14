@@ -18,10 +18,9 @@ module.exports = View.extend({
     });
     this.setView('header', header, true);
   },
-  renderContent: function(page) {
-    page = page || 'index';
-    var Content = require('./main/' + page);
-    var content = new Content();
+  renderContent: function(ContentView) {
+    ContentView = ContentView || require('./main/index');
+    var content = new ContentView(this.regionProperties);
     this.setView('content', content).render();
   }
 });

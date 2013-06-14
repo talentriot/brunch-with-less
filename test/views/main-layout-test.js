@@ -4,7 +4,7 @@ describe('Main Page', function() {
   var view, headerEl, layoutEl;
 
   view = mainLayout.render().view;
-  view.trigger('route', 'index');
+  view.trigger('route', require('views/main/index'));
   beforeEach(function() {
     layoutEl = view.$el;
     headerEl = layoutEl.find('header');
@@ -20,7 +20,7 @@ describe('Main Page', function() {
     it('$el should be able to find a child element', function() {
       expect(headerEl).to.have.length(1);
     });
-    it('there should be a link back to the mainpage', function() {
+    it('there should be a link back to the homepage', function() {
       expect(layoutEl.find('a[href="/"]')).to.have.length.of.at.least(1);
     });
     it('there should be content', function() {
