@@ -3,7 +3,9 @@
   <meta charset="utf-8">
   <title>Mocha Tests</title>
   <link rel="stylesheet" href="styles/test.css" />
-
+</head>
+<body>
+  <div id="mocha"></div>
   <!-- Live Reload -->
   <script>
     window.brunch = window.brunch || {};
@@ -18,21 +20,15 @@
       ui: 'bdd',
       ignoreLeaks: true
     });
-    window.expect = chai.expect;
-    window.should = chai.should();
+    var expect = chai.expect;
+    var should = chai.should();
   </script>
   <script src="scripts/test.js"></script>
   <script>
     var testHelper = require('test/test-helpers');
     testHelper.init();
-
-    $(function() {
-      mocha.run();
-    });
+    if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
+    else { mocha.run(); };
   </script>
-
-</head>
-<body>
-  <div id="mocha"></div>
 </body>
 </html>
