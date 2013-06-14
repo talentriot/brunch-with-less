@@ -2,4 +2,5 @@ language: node_js
 node_js:
   - 0.10
 before_install:
+  - phantomjs --version
   - npm install brunch mocha-phantomjs -g
