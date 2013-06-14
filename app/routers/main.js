@@ -22,9 +22,9 @@ module.exports = Backbone.Router.extend({
   },
 
   index: function() {
-    renderRegion('index');
+    renderRegion(require('views/main/index'));
   },
   docs: function() {
-    renderRegion('docs');
+    renderRegion(require('views/main/docs'));
   }
 });
