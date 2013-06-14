@@ -8,8 +8,9 @@ var getMainRegion = _.once(function() {
   return layout;
 });
 
-function renderRegion(region) {
+function renderRegion(region, properties) {
   var layout = getMainRegion();
+  layout.regionProperties = properties;
   layout.trigger('route', region);
   return layout;
 }
