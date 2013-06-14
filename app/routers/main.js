@@ -8,8 +8,9 @@ var getMainRegion = _.once(function() {
   return layout;
 });
 
-function renderRegion(region) {
+function renderRegion(region, properties) {
   var layout = getMainRegion();
+  layout.regionProperties = properties;
   layout.trigger('route', region);
   return layout;
 }
@@ -22,9 +23,9 @@ module.exports = Backbone.Router.extend({
   },
 
   index: function() {
-    renderRegion('index');
+    renderRegion(require('views/main/index'));
   },
   docs: function() {
-    renderRegion('docs');
+    renderRegion(require('views/main/docs'));
   }
 });
