@@ -1,4 +1,4 @@
-Brunch With Less
+Brunch With Less [![Build Status](https://travis-ci.org/talentriot/brunch-with-less.png?branch=master)](https://travis-ci.org/talentriot/brunch-with-less)
 ================
 
 Simple javascript backbone.js skeleton built on top of [brunch](http://brunch.io) that includes essentials and provides some guidance at creating maintainable apps.
