@@ -14,6 +14,7 @@
   "jquery": true,    // adds jquery to global exclusions
   "globals": {       // defines some other globals:
     "_": true,       // underscore
+    "Handlebars": true,    // Handlebars!
     "require": true, // commonjs module def
     "module": true,  // commonjs module def
     "Backbone": true // backbone!
