@@ -1,11 +1,11 @@
-describe("Link Model", function() {
+describe('Link Model', function() {
   var Link = require('models/link');
   var model, collection;
   beforeEach(function() {
     model = new Link.Model();
     collection = new Link.Collection();
   });
-  describe("Model", function() {
+  describe('Model', function() {
     it('should have name, url and an external flag', function() {
       model.attributes.should.have.property('name');
       model.attributes.should.have.property('url');
@@ -13,13 +13,13 @@ describe("Link Model", function() {
     });
   });
 
-  describe("Collection", function() {
+  describe('Collection', function() {
 
     it('should have Link.Model as a model', function() {
       collection.model.should.eql(Link.Model);
     });
   });
-  describe("Header Link Collection", function() {
+  describe('Header Link Collection', function() {
     beforeEach(function() {
       collection.initializeHeaderLinks();
     });
