@@ -1,0 +1,27 @@
+{
+  "indent": 2,       // indent at 2
+  "evil": true,      // supress eval warning
+  "browser": true,   // supress warning about 'document', etc
+  "trailing": true,  // warn about trailing whitespace
+  "sub": true,       // suppress warnings about using [] notation vs in dot notation
+  "camelcase": true, // force camecase for variables or VAR_NAME
+  "quotmark": true,  // force consistant quote style (double or single)
+  "latedef": true,   // prohibits the use of a variable before it was defined.
+  "newcap": true,    // requires you to capitalize names of constructor functions
+  "nonew": true,     // prohibits the use of constructor functions for side-effects
+  "undef": true,     // warns about undefined vars
+  "unused": true,    // warns about unused vars
+  "jquery": true,    // adds jquery to global exclusions
+  "globals": {       // defines some other globals:
+    "_": true,       // underscore
+    "Handlebars": true, // Handlebars!
+    "require": true, // commonjs module def
+    "module": true,  // commonjs module def
+    "Backbone": true, // backbone!
+    "describe": true, // fn from Jasmine testing framework
+    "beforeEach": true, // fn from Jasmine testing framework
+    "it": true,      // fn from Jasmine testing framework
+    "expect": true,  // fn from Jasmine testing framework
+    "chai": true    // chai!
+  }
+}
