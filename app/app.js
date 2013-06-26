@@ -4,7 +4,7 @@
 // creation.
 var app = {
   // The root path to run the application.
-  root: "/"
+  root: '/'
 };
 
 app.start = _.extend({
@@ -29,14 +29,14 @@ app.start = _.extend({
     // All navigation that is relative should be passed through the navigate
     // method, to be processed by the router. If the link has a `data-bypass`
     // attribute, bypass the delegation completely.
-    $(document).on("click", "a[href]:not([data-bypass])", function(evt) {
+    $(document).on('click', 'a[href]:not([data-bypass])', function(evt) {
       // Get the absolute anchor href.
       var href = {
-        prop: $(this).prop("href"),
-        attr: $(this).attr("href")
+        prop: $(this).prop('href'),
+        attr: $(this).attr('href')
       };
       // Get the absolute root.
-      var root = location.protocol + "//" + location.host + app.root;
+      var root = location.protocol + '//' + location.host + app.root;
 
       // Ensure the root is part of the anchor href, meaning it's relative.
       if (href.prop.slice(0, root.length) === root) {
