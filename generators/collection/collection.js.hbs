@@ -1,0 +1,17 @@
+var Model, Collection, {{#camelize}}{{name}}{{/camelize}}, {{#camelize}}{{pluralName}}{{/camelize}};
+
+Model = require('./model');
+Collection = require('./collection');
+
+{{#camelize}}{{name}}{{/camelize}} = Model.extend({
+
+});
+
+{{#camelize}}{{pluralName}}{{/camelize}} = Collection.extend({
+  model: {{#camelize}}{{name}}{{/camelize}}
+});
+
+module.exports = {
+  Model: {{name}},
+  Collection: {{pluralName}}
+};

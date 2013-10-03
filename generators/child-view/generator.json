@@ -1,0 +1,20 @@
+{
+  "files": [
+    {
+      "from": "view.js.hbs",
+      "to": "app/views/{{name}}.js"
+    },
+    {
+      "from": "empty",
+      "to": "app/views/templates/{{name}}.hbs"
+    },
+    {
+      "from": "style.less.hbs",
+      "to": "app/views/styles/_{{name}}.less"
+    }
+  ],
+  "dependencies": [
+    {"type": "view"},
+    {"type": "template", "parentPath": "{{parentPath}}/templates"}
+  ]
+}
