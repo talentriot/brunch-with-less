@@ -9,9 +9,10 @@ Collection = require('./collection');
 
 {{#camelize}}{{pluralName}}{{/camelize}} = Collection.extend({
   model: {{#camelize}}{{name}}{{/camelize}}
+
 });
 
 module.exports = {
-  Model: {{name}},
-  Collection: {{pluralName}}
+  Model: {{#camelize}}{{name}}{{/camelize}},
+  Collection: {{#camelize}}{{pluralName}}{{/camelize}}
 };

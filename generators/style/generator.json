@@ -2,7 +2,7 @@
   "files": [
     {
       "from": "style.less.hbs",
-      "to": "app/views/{{name}}/styles/_{{name}}.less"
+      "to": "app/views/styles/_{{name}}.less"
     }
   ]
 }

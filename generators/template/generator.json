@@ -2,7 +2,7 @@
   "files": [
     {
       "from": "empty",
-      "to": "app/views/{{name}}/templates/{{name}}.hbs"
+      "to": "app/views/templates/{{name}}.hbs"
     }
   ]
 }

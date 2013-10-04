@@ -5,16 +5,9 @@
       "to": "app/views/{{name}}.js"
     },
     {
-      "from": "empty",
-      "to": "app/views/templates/{{name}}.hbs"
-    },
-    {
-      "from": "style.less.hbs",
-      "to": "app/views/styles/_{{name}}.less"
+      "from": "index-requires.js.hbs",
+      "to": "app/views/index.js",
+      "method": "append"
     }
-  ],
-  "dependencies": [
-    {"type": "view"},
-    {"type": "template", "parentPath": "{{parentPath}}/templates"}
   ]
 }
