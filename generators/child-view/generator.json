@@ -9,5 +9,9 @@
       "to": "app/views/index.js",
       "method": "append"
     }
+  ],
+  "dependencies" : [
+    {"type": "template", "parentPath": "{{parentPath}}/templates"},
+    {"type": "style", "parentPath": "{{parentPath}}/styles"}
   ]
 }
