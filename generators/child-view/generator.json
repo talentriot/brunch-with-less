@@ -3,11 +3,6 @@
     {
       "from": "view.js.hbs",
       "to": "app/views/{{name}}.js"
-    },
-    {
-      "from": "index-requires.js.hbs",
-      "to": "app/views/index.js",
-      "method": "append"
     }
   ],
   "dependencies" : [
