@@ -3,7 +3,8 @@
   "dependencies" : [
     {"type": "view", "parentPath": "{{parentPath}}"},
     {"type": "template", "parentPath": "{{parentPath}}/templates"},
-    {"type": "style", "parentPath": "{{parentPath}}/styles"}
+    {"type": "style", "parentPath": "{{parentPath}}/styles"},
+    {"type": "import-style", "parentPath": "{{parentPath}}/styles"}
   ],
   "description": "parentPath option is required"
 }
