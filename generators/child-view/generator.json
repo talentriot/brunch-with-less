@@ -1,11 +1,7 @@
 {
-  "files": [
-    {
-      "from": "view.js.hbs",
-      "to": "app/views/{{name}}.js"
-    }
-  ],
+  "files": [],
   "dependencies" : [
+    {"type": "view", "parentPath": "{{parentPath}}"},
     {"type": "template", "parentPath": "{{parentPath}}/templates"},
     {"type": "style", "parentPath": "{{parentPath}}/styles"}
   ]
