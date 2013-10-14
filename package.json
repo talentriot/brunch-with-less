@@ -27,8 +27,6 @@
 
     "uglify-js-brunch": "> 1.5 < 1.6",
     "clean-css-brunch": "> 1.5 < 1.6",
-
-    "scaffolt": "0.4.3"
   },
   "devDependencies": {
     "chai": "*",

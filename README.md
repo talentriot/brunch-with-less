@@ -13,7 +13,6 @@ into it, and by using brunch you can incorporate `CoffeeScript`, `LiveScript` or
 * [Handlebars](http://handlebarsjs.com) - sensible default thats faster than underscore, wildly used and understood
 * [LESS](http://lesscss.org) with [clearless](http://clearleft.github.io/clearless/) - dynamic stylesheet language, comparable with Stylus and SASS
 * [LayoutManager](https://github.com/tbranyen/backbone.layoutmanager) - because you need something to help backbone wrangle those views
-* [Scaffolt](https://github.com/paulmillr/scaffolt) - Dead-simple scaffolder. Consumes JSON generators with Handlebars support.
 
 ## Install
 
@@ -55,7 +54,6 @@ Might not be entirely up to date, `Handlebars` and `LESS` depend on their respec
 * [LayoutManager 0.8.8](https://github.com/tbranyen/backbone.layoutmanager)
 * [Handlebars 1.0.0](http://handlebarsjs.com)
 * [LESS 1.3.3](http://lesscss.org/) with clearless
-* [Scaffolt 0.4.3](https://github.com/paulmillr/scaffolt)
 
 ## Whys
 
