@@ -1,8 +1,13 @@
 {
-  "files": [],
-  "dependencies" : [
-    {"type": "view-template", "parentPath": "{{parentPath}}"},
-    {"type": "style", "parentPath": "{{parentPath}}/styles"},
-    {"type": "import-style", "parentPath": "{{parentPath}}/styles"}
+  "files": [
+    {
+      "from": "view.js.hbs",
+      "to": "app/views/index.js"
+    }
+  ],
+  "dependencies": [
+    {"type": "index-style", "parentPath": "{{parentPath}}/styles"},
+    {"type": "template", "name": "index", "parentPath": "{{parentPath}}/templates"},
+    {"type": "style", "parentPath": "{{parentPath}}/styles"}
   ]
 }
