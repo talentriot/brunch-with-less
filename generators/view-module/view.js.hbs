@@ -1,7 +1,7 @@
 var View, template;
 
 View = require('views/view').View;
-template = require('./templates/index');
+template = require('{{parentPath}}/templates/index');
 
 module.exports = View.extend({
   template: template
