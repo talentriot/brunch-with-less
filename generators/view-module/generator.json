@@ -2,13 +2,12 @@
   "files": [
     {
       "from": "view.js.hbs",
-      "to": "app/views/index.js"
+      "to": "app/views/{{name}}/index.js"
     }
   ],
   "dependencies": [
-    {"type": "index-style", "parentPath": "{{parentPath}}/styles"},
     {"type": "template", "name": "index", "parentPath": "{{parentPath}}/templates"},
-    {"type": "style", "parentPath": "{{parentPath}}/styles"}
+    {"type": "index-style", "parentPath": "{{parentPath}}/styles"}
   ],
   "parentPath": "app/views",
   "description": "only use with --path"
