@@ -3,5 +3,6 @@
   "dependencies" : [
     {"type": "view-template", "parentPath": "{{parentPath}}"},
     {"type": "style", "parentPath": "{{parentPath}}/styles"}
-  ]
+  ],
+  "parentPath": "app/views"
 }

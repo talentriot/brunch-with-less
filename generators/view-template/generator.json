@@ -7,5 +7,6 @@
   ],
   "dependencies": [
     {"type": "template", "parentPath": "{{parentPath}}/templates"}
-  ]
+  ],
+  "parentPath": "app/views"
 }
