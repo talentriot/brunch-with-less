@@ -1,7 +1,7 @@
 var Model, Collection, {{#camelize}}{{name}}{{/camelize}}, {{#camelize}}{{pluralName}}{{/camelize}};
 
-Model = require('app/models/model');
-Collection = require('app/models/collection');
+Model = require('models/model');
+Collection = require('models/collection');
 
 {{#camelize}}{{name}}{{/camelize}} = Model.extend({
 

@@ -2,7 +2,7 @@
   "files": [
     {
       "from": "collection.js.hbs",
-      "to": "app/models/{{pluralName}}.js"
+      "to": "models/{{pluralName}}.js"
     }
   ]
 }
