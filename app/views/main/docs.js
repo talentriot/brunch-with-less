@@ -1,9 +1,11 @@
-var View = require('../view').View,
-  Links = require('models/link'),
-  linkTemplate = require('./templates/link'),
-  docsTemplate = require('./templates/docs');
+var View, Links, LinkView, linkTemplate, docsTemplate;
 
-var LinkView = View.extend({
+View = require('../view').View;
+Links = require('models/link');
+linkTemplate = require('./templates/link');
+docsTemplate = require('./templates/docs');
+
+LinkView = View.extend({
   tagName: 'li',
   template: linkTemplate,
 
