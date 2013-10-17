@@ -3,6 +3,5 @@ node_js:
   - 0.10.x
 before_install:
   - phantomjs --version
-  - npm install brunch mocha-phantomjs@2.0.3 -g
-  - npm install -g bower
+  - npm install brunch bower mocha-phantomjs@2.0.3 -g
   - bower install
