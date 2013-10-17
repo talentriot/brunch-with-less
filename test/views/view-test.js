@@ -17,12 +17,12 @@ describe('Baseline View', function() {
   describe('Iterating over a list of models (iterateOverList)', function() {
     it('should work with no paramaters', function() {
       listView.iterateOverList();
-      listView.views.should.have.property('').to.have.length(4);
+      listView.views.should.have.property('').with.length(4);
     });
     it('should work with just a selector', function() {
       listView.iterateOverList('.foo');
-      expect(listView.views).to.have.property('.foo').to.have.length(4);
-      expect(listView.views['.foo'][0].tagName).to.equal('div');
+      listView.views.should.have.property('.foo').with.length(4);
+      listView.views['.foo'][0].tagName.should.equal('div');
     });
     it('should work with just a custom view', function() {
       listView.iterateOverList(ItemView);
@@ -30,27 +30,27 @@ describe('Baseline View', function() {
     });
     it('should work with a custom view and list of models', function() {
       listView.iterateOverList(ItemView, customList);
-      listView.views.should.have.property('').to.have.length(2);
+      listView.views.should.have.property('').with.length(2);
       expect(listView.views[''][0].tagName).to.equal('li');
     });
     it('should work with a custom view and selector', function() {
       // var customView = new ItemView();
       listView.iterateOverList(ItemView, '.foo');
-      expect(listView.views).to.have.property('.foo');
-      expect(listView.views['.foo'][0].tagName).to.equal('li');
+      listView.views.should.have.property('.foo');
+      listView.views['.foo'][0].tagName.should.equal('li');
     });
     it('should work with a custom view, selector and list of models', function() {
       listView.iterateOverList(ItemView, '.foo', customList);
-      expect(listView.views).to.have.property('.foo').to.have.length(2);
-      expect(listView.views['.foo'][0].tagName).to.equal('li');
+      listView.views.should.have.property('.foo').with.length(2);
+      listView.views['.foo'][0].tagName.should.equal('li');
     });
     it('should work with a custom list of models', function() {
       listView.iterateOverList(customList);
-      listView.views.should.have.property('').to.have.length(2);
+      listView.views.should.have.property('').with.length(2);
     });
     it('should work with a custom list of models and a selector', function() {
       listView.iterateOverList('.foo', customList);
-      listView.views.should.have.property('.foo').to.have.length(2);
+      listView.views.should.have.property('.foo').with.length(2);
     });
   });
 });
