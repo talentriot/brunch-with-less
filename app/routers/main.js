@@ -1,4 +1,6 @@
-var getMainRegion = _.once(function() {
+var getMainRegion;
+
+getMainRegion = _.once(function() {
   var MainLayout = require('views/main-layout');
   var layout = new MainLayout({
     el: $('div#app')

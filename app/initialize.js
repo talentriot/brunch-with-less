@@ -1,4 +1,6 @@
-var app = require('app');
+var app;
+
+app = require('app');
 
 $(function() {
   app.start.initialize();
