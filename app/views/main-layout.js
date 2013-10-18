@@ -1,5 +1,7 @@
-var View = require('./view').View;
-var template = require('./templates/main-layout');
+var View, template;
+
+View = require('./view').View;
+template = require('./templates/main-layout');
 
 module.exports = View.extend({
   template: template,

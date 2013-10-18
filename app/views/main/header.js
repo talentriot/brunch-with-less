@@ -1,7 +1,9 @@
-var View = require('../view').View,
-  template = require('./templates/header');
+var View, LinksView, template;
 
-var LinksView = View.extend({
+View = require('../view').View;
+template = require('./templates/header');
+
+LinksView = View.extend({
   template: require('./templates/link'),
   tagName: 'li',
   serialize: function() {

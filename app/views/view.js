@@ -12,27 +12,27 @@ Backbone.Layout.configure({
 
 // Base class for all views
 var View = Backbone.Layout.extend({
-  iterateOverList: function(viewObj, selector, list) {
+  iterateOverList: function(ViewObj, selector, list) {
     list = list || this.collection.models;
-    viewObj = viewObj || View;
+    ViewObj = ViewObj || View;
     // if selector is an array, its really a list
     if (_.isArray(selector)) {
       list = selector;
     }
     // if view object is a string its really a selector and we don't have a view
-    if (_.isString(viewObj)) {
-      selector = viewObj;
-      viewObj = View;
+    if (_.isString(ViewObj)) {
+      selector = ViewObj;
+      ViewObj = View;
       // otherwise if its an array then its really a list
       // and we still don't have a view
-    } else if (_.isArray(viewObj)) {
-      list = viewObj;
-      viewObj = View;
+    } else if (_.isArray(ViewObj)) {
+      list = ViewObj;
+      ViewObj = View;
     }
 
     // Iterate over the passed list and create a view for each item.
     _.each(list, function(model) {
-      var childView = new viewObj({
+      var childView = new ViewObj({
         model: model
       });
       if (_.isString(selector)) {

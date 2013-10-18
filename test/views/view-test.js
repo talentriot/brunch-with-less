@@ -1,5 +1,5 @@
 describe('Baseline View', function() {
-  var View, ListView, views, ItemView, data, collection, customList, listView;
+  var View, ListView, ItemView, data, collection, customList, listView;
 
   View = require('views/view').View;
   ListView = View.extend({tagName: 'ul'});
