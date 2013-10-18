@@ -17,7 +17,7 @@ into it, and by using brunch you can incorporate `CoffeeScript`, `LiveScript` or
 ## Install
 
 - Install [node.js](http://nodejs.org)
-- Install Brunch: `sudo npm install -g brunch`
+- Install Brunch & bower: `sudo npm install -g brunch bower`
 - Run `brunch new <project name> -s github://talentriot/brunch-with-less` to download the skeleton into your project folder.
 - `$ cd <project name>`
 - Run `npm install` to install any node dependencies listed in `package.json`.
