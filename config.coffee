@@ -8,7 +8,7 @@ exports.config =
     javascripts:
       joinTo:
         'scripts/app.js': /^app/
-        'scripts/vendor.js': /^vendor/
+        'scripts/vendor.js': /^(vendor|bower_components)/
         'test/scripts/test.js': /^test(\/|\\)(?!vendor)/
         'test/scripts/vendor.js': /^test(\/|\\)(?=vendor)/
       order:
