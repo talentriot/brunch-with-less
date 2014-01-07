@@ -29,5 +29,8 @@
     "lodash": {
       "main": "dist/lodash.underscore.js"
     }
+  },
+  "resolutions": {
+    "backbone": "~1.0.0"
   }
 }
