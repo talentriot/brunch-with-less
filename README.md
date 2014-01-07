@@ -3,7 +3,7 @@ Brunch With Less [![Build Status](https://travis-ci.org/talentriot/brunch-with-l
 
 Simple javascript backbone.js skeleton built on top of [brunch](http://brunch.io) that includes essentials and provides some guidance at creating maintainable apps.
 
-### Included tech
+### Included techonologies
 
 * Javascript - because you should know JS before learning anything that compiles
 into it, and by using brunch you can incorporate `CoffeeScript`, `LiveScript` or anything, really, when you feel comfortable.
