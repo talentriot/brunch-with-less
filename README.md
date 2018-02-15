@@ -34,7 +34,7 @@ See more info on the [official brunch docs](https://github.com/brunch/brunch/blo
 
 ## Unit Testing
 
-The [Mocha](http://visionmedia.github.com/mocha/) test-suite is included by default.  Files located in `tests` that end with `_test.js` (or .coffee) are automatically packaged.
+The [Mocha](http://mochajs.org/) test-suite is included by default.  Files located in `tests` that end with `_test.js` (or .coffee) are automatically packaged.
 
 To run tests in the browser, navigate to `public/test/index.html`.  Test-related code is automatically recompiled during `brunch build` and `brunch watch`, and will automatically refresh the test page.
 To set up and get started on using a specific testing interface, take a look at the following guides:
